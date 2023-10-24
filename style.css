@@ -175,8 +175,8 @@ button:hover {
     grid-column: 2;
     background-color: var(--search-box);
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 300px;
+    grid-template-rows: min-content 1fr;
     padding: 20px;
     gap: 30px;
 }
@@ -251,4 +251,27 @@ button:hover {
     border-top: 1px solid var(--announcement-border);
     border-bottom: 1px solid var(--announcement-border);
     padding: 15px 5px;
+}
+
+.user h6 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 2px;
+}
+
+.user p {
+    color: var(--project-text);
+    font-size: 0.9rem;
+}
+
+.user > img {
+    height: 60px;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    column-gap: 10px;
 }
