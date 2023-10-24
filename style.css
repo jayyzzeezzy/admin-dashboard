@@ -5,6 +5,7 @@
     --border-color: #fb923c;
     --project-text: #71717a;
     --announcement-border: #d1d5db;
+    --box-shadow: #9ca3af;
 }
 
 html, body {
@@ -83,6 +84,8 @@ a > img, .dashboard-logo {
     grid-row: 1;
     grid-column: 2;
     background-color: var(--tiles-color);
+    position: relative;
+    box-shadow: 3px 2px 5px 3px var(--box-shadow);
 }
 
 .header-container {
@@ -194,7 +197,6 @@ button:hover {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 250px;
     gap: 30px;
-    box-sizing: border-box;
 }
 
 .project {
